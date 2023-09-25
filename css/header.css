@@ -1,0 +1,34 @@
+header {
+    align-items: center;
+    background-color: var(--background-secondary);
+    color: var(--text-primary);
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    padding: 25px 40px 25px 50px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+header > .logo {
+    margin-left: 5rem;
+    font-size: 1.7rem;
+    font-weight: normal;
+}
+
+header > ul {
+    display: flex;
+    gap: 2rem;
+    text-decoration: none;
+    margin-right: 10rem;
+}
+
+header > ul > li > a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 1.3rem;
+}
