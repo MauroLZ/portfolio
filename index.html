@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap"
@@ -12,13 +13,20 @@
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main-section.css">
     <link rel="stylesheet" href="css/coffee.css">
+    <link rel="stylesheet" href="css/about-section.css">
+    <link rel="stylesheet" href="css/portfolio-section.css">
+    <link rel="stylesheet" href="css/contact-section.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
 <header>
     <h3 class="logo">Furse</h3>
+    <div class="mobile-menu-button">
+        <i class="fa-solid fa-bars"></i>
+    </div>
     <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Projects</a></li>
@@ -26,6 +34,16 @@
         <li><a href="#">Contact</a></li>
     </ul>
 </header>
+
+<div class="mobile-menu">
+    <i class="fa-solid fa-xmark close-button"></i>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
 
 <section class="main-section">
     <div class="main-section_upper">
@@ -66,25 +84,164 @@
         </div>
     </div>
 </section>
-<div class="container">
-    <div class="upper">
-        <div class="timer"></div>
-        <div class="upper-btn"></div>
+<section class="about-section">
+    <div class="left-section">
+        <img src="assets/magpie.webp" alt="image">
     </div>
-    <div class="filter">
-        <div class="filter-base"></div>
-        <div class="handle"></div>
-        <div class="coffee"></div>
-        <div class="steam"></div>
-        <div class="coffee-drop"></div>
+    <div class="right-section">
+        <div class="section-title">
+            <h3>About me</h3>
+        </div>
+        <div class="section-subtitle">
+            <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+        </div>
+        <div class="section-description">
+            <p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Cum ipsum adipisci tempora a iure excepturi
+                molestias aliquid, dolorum iste doloremque dolores, quis odit illum. Explicabo reprehenderit repellendus
+                consectetur excepturi quisquam. Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Cum ipsum
+                adipisci tempora a iure excepturi molestias aliquid, dolorum iste doloremque dolores, quis odit
+                illum.</p>
+        </div>
     </div>
-    <div class="back">
-        <div class="tray"></div>
-        <div class="cup"></div>
+</section>
+
+<section class="portfolio-section">
+    <h4 class="title">
+        Portfolio
+    </h4>
+    <h2 class="subtitle">
+        Each project is a unique piece of development 🧩
+    </h2>
+    <div class="project1 project">
+        <div class="project-display">
+            <img src="assets/magpie.webp" alt="">
+        </div>
+        <div class="project-information">
+            <h4 class="project-title">RANDOM PROJECT TITLE</h4>
+            <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet at aut
+                consectetur consequuntur cum, earum est explicabo fugit illum iure mollitia nisi nobis pariatur quidem
+                repellendus tenetur velit vero?</p>
+            <div class="project-stack">
+                <ul class="project-stack-list">
+                    <li class="project-stack-item">PHP</li>
+                    <li class="project-stack-item">CSS</li>
+                    <li class="project-stack-item">JS</li>
+                </ul>
+            </div>
+            <div class="project-links">
+                <a href="#" class="project-link">
+                    Live demo
+                    <i class="fas fa-globe"></i>
+                </a>
+                <a href="#" class="project-link">
+                    Code
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
     </div>
-    <div class="lower">
-        <div class="lower-btn"></div>
+    <div class="project2 project">
+        <div class="project-display">
+            <img src="assets/magpie.webp" alt="">
+        </div>
+        <div class="project-information">
+            <h4 class="project-title">RANDOM PROJECT TITLE</h4>
+            <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet at aut
+                consectetur consequuntur cum, earum est explicabo fugit illum iure mollitia nisi nobis pariatur quidem
+                repellendus tenetur velit vero?</p>
+            <div class="project-stack">
+                <ul class="project-stack-list">
+                    <li class="project-stack-item">PHP</li>
+                    <li class="project-stack-item">CSS</li>
+                    <li class="project-stack-item">JS</li>
+                </ul>
+            </div>
+            <div class="project-links">
+                <a href="#" class="project-link">
+                    Live demo
+                    <i class="fas fa-globe"></i>
+                </a>
+                <a href="#" class="project-link">
+                    Code
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
     </div>
-</div>
+    <div class="project3 project">
+        <div class="project-display">
+            <img src="assets/magpie.webp" alt="">
+        </div>
+        <div class="project-information">
+            <h4 class="project-title">RANDOM PROJECT TITLE</h4>
+            <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet at aut
+                consectetur consequuntur cum, earum est explicabo fugit illum iure mollitia nisi nobis pariatur quidem
+                repellendus tenetur velit vero?</p>
+            <div class="project-stack">
+                <ul class="project-stack-list">
+                    <li class="project-stack-item">PHP</li>
+                    <li class="project-stack-item">CSS</li>
+                    <li class="project-stack-item">JS</li>
+                </ul>
+            </div>
+            <div class="project-links">
+                <a href="#" class="project-link">
+                    Live demo
+                    <i class="fas fa-globe"></i>
+                </a>
+                <a href="#" class="project-link">
+                    Code
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact">
+    <div class="contact-container">
+        <div class="contact-text">
+            <div class="contact-title">Contact </div>
+            <div class="contact-subtitle">Send me a message!</div>
+        </div>
+        <div class="contact-icons">
+            <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="contact-info">
+                    <h3>Location</h3>
+                    <p>Baja California, Mexico</p>
+                </div>
+            </div>
+            <div class="contact-mail">
+                <i class="fas fa-envelope"></i>
+                <div class="contact-info">
+                    <h3>Mail</h3>
+                    <a href="#">mauro.lara@uabc.edu.mx</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-text">
+            <p>Mauro Lara Z. -  2023</p>
+        </div>
+        <div class="footer-icons">
+            <a href="https://www.facebook.com/mauro.lara.777/" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/mauro.lara.777/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mauro-lara-777/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/app.js"></script>
 </body>
 </html>

@@ -3,7 +3,8 @@
     /* Background Colors */
     --background-primary: #222; /* Dark background */
     --background-secondary: #333; /* Slightly lighter background */
-    --background-light: #fff; /* Light background */
+    --background-light: #f9f9f9; /* Light background */
+    --background-white: #fff; /* White background */
 
     /* Text Colors */
     --text-primary: #fff; /* White text */

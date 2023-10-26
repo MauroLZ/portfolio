@@ -11,6 +11,7 @@ header {
     left: 0;
     top: 0;
     width: 100%;
+    z-index: 3;
 }
 
 header > .logo {
@@ -32,3 +33,95 @@ header > ul > li > a {
     font-weight: lighter;
     font-size: 1.3rem;
 }
+
+.mobile-menu-button {
+    display: none; /* Initially hidden on larger screens */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.mobile-menu-button i {
+    font-size: 1.7rem;
+    color: var(--text-primary);
+}
+
+/* Mobile menu */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -100%; /* Start off-screen to the left */
+    width: 100%; /* Adjust the width as needed */
+    height: 100%;
+    background-color: var(--background-secondary);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all .3s ease-in-out;
+    z-index: 4;
+}
+
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-menu li {
+    padding: 15px;
+}
+
+.mobile-menu i {
+    position: absolute;
+    top: 2.5rem; /* Adjust the top position as needed */
+    right: 3rem; /* Adjust the right position as needed */
+    font-size: 2rem;
+    cursor: pointer;
+    background: none;
+}
+
+/* Media query for screens below 900px */
+@media (max-width: 900px) {
+    header {
+        padding: 25px 0;
+    }
+
+    .mobile-menu-button {
+        display: flex; /* Show the mobile menu button */
+        margin-right: 3rem;
+    }
+
+    .mobile-menu-button i:hover {
+        color: var(--accent-primary);
+    }
+
+    header > ul {
+        display: none;
+    }
+
+    /* Show the mobile menu when the button is clicked */
+    .mobile-menu.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0; /* Slide the menu into view */
+    }
+
+    .active a {
+        text-decoration: none;
+        color: var(--text-primary);
+        font-size: 2rem;
+        font-weight: lighter;
+    }
+
+    .active a:hover, .mobile-menu.active i:hover {
+        color: var(--accent-primary);
+    }
+
+    .mobile-menu.active i {
+        display: block;
+        font-size: 2rem;
+        color: var(--text-primary);
+    }
+}
+
