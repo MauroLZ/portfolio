@@ -84,6 +84,7 @@ header > ul > li > a {
 @media (max-width: 600px) {
     header {
         padding: 25px 0;
+        width: 100%;
     }
 
     .mobile-menu-button {
