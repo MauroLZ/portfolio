@@ -150,3 +150,24 @@ a {
         margin-top: 1rem;
     }
 }
+
+@media (max-width: 379px) {
+    .project-stack-list {
+        max-width: 240px;
+    }
+}
+
+@media (max-width: 320px) {
+    .project {
+        height: 60.5em;
+    }
+
+    .project-stack-list {
+        max-width: 150px;
+    }
+
+    .project-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
