@@ -126,7 +126,7 @@ a {
         display: flex;
         flex-direction: column;
         height: 53em;
-        width: 600px;
+        max-width: 600px;
         gap: 0;
         padding: .2rem;
     }

@@ -81,7 +81,7 @@ header > ul > li > a {
 }
 
 /* Media query for screens below 900px */
-@media (max-width: 900px) {
+@media (max-width: 600px) {
     header {
         padding: 25px 0;
     }
