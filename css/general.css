@@ -2,22 +2,22 @@
 :root {
     /* Background Colors */
     --background-primary: #222; /* Dark background */
-    --background-secondary: #333; /* Slightly lighter background */
-    --background-light: #f9f9f9; /* Light background */
-    --background-white: #fff; /* White background */
+    --background-secondary: #b6a897; /* Slightly lighter background */
+    --background-light: #f6f5f3; /* Light background */
+    --background-white: #e6e2dc; /* White background */
 
     /* Text Colors */
     --text-primary: #fff; /* White text */
     --text-secondary: #888; /* Subtle gray text */
-    --text-dark: #222; /* Dark text */
+    --text-dark: #3c220c; /* Dark text */
 
     /* Accent Colors */
-    --accent-primary: #964B00; /* Coffee-inspired accent color */
+    --accent-primary: #b2632e; /* Coffee-inspired accent color */
     --accent-secondary: #FFD700; /* Gold accent color (for highlights) */
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 body {
