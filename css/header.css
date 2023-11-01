@@ -18,12 +18,6 @@ header > .logo {
     margin-left: 5rem;
     font-size: 1.7rem;
     font-weight: normal;
-    word-spacing: .7rem;
-    letter-spacing: 2px;
-}
-
-header > h3 > i {
-    margin-right: 1rem;
 }
 
 header > ul {
@@ -31,10 +25,6 @@ header > ul {
     gap: 2rem;
     text-decoration: none;
     margin-right: 10rem;
-}
-
-header ul li a:hover {
-    color: var(--text-dark)
 }
 
 header > ul > li > a {
@@ -81,7 +71,7 @@ header > ul > li > a {
     padding: 15px;
 }
 
-.mobile-menu .close-button {
+.mobile-menu i {
     position: absolute;
     top: 2.5rem; /* Adjust the top position as needed */
     right: 3rem; /* Adjust the right position as needed */
@@ -100,11 +90,6 @@ header > ul > li > a {
     .mobile-menu-button {
         display: flex; /* Show the mobile menu button */
         margin-right: 3rem;
-    }
-
-    .mobile-menu > ul > li > a > i {
-        margin-right: 1.3rem;
-        font-size: 2rem;
     }
 
     .mobile-menu-button i:hover {
@@ -134,7 +119,7 @@ header > ul > li > a {
         color: var(--accent-primary);
     }
 
-    .mobile-menu.active .close-button {
+    .mobile-menu.active i {
         display: block;
         font-size: 2rem;
         color: var(--text-primary);
