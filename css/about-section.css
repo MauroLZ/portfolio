@@ -52,18 +52,17 @@
 /* Media query for smaller screens */
 @media (max-width: 1030px) {
     .about-section {
-        gap: 2rem;
+        gap: .1rem;
         flex-direction: column; /* Switch to column layout */
         align-items: center; /* Center items horizontally */
         text-align: center; /* Center text within each section */
-        padding-bottom: 4rem;
         min-height: 10px;
         height: auto;
     }
 
     .left-section,
     .right-section {
-        max-width: 100%; /* Allow sections to take full width on smaller screens */
+        max-width: 85vw; /* Allow sections to take full width on smaller screens */
         height: auto; /* Allow sections to expand in height */
     }
 
@@ -79,7 +78,7 @@
     .left-section {
         height: 350px;
         width: 400px;
-        margin-top: 4rem;
+        margin-top: 2.5rem;
     }
 }
 
@@ -90,9 +89,8 @@
     }
 
     .right-section {
-        margin: 4.5rem 0;
-        max-width: 350px;
-        gap: 1.5rem;
+        margin: 3.5rem 0;
+        max-width: 85vw;
     }
 
     .right-section > .section-title {
@@ -103,13 +101,11 @@
 @media (max-width: 400px) {
     .left-section {
         max-width: 340px;
-        margin-bottom: 2rem;
     }
 
     .right-section {
-        max-width: 250px;
-        gap: 1.5rem;
-        margin: 7rem 0;
+        margin: 4rem 0;
+        max-width: 85vw;
     }
 
     .right-section > .section-title {
@@ -125,7 +121,6 @@
 
     .right-section {
         max-width: 250px;
-        gap: 1.5rem;
         margin: 7rem 0;
     }
 
