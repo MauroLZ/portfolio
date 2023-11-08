@@ -30,6 +30,10 @@ footer p {
     font-size: 2.3rem;
 }
 
+.footer-icons a:hover {
+    color: var(--text-dark);
+}
+
 @media (max-width: 769px) {
     footer {
         padding: 2rem 0;
