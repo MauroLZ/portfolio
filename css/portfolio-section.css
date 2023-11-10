@@ -14,7 +14,7 @@
 }
 
 .subtitle {
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-weight: lighter;
     color: var(--text-secondary);
     margin-bottom: 2rem;
@@ -37,10 +37,18 @@
 
 .project-display {
     height: 95%;
-    width: 55%;
+    width: 100%;
 }
 
-.project-display > img {
+.project-display .project-link_image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-link_image > img {
     width: 100%;
     height: 100%;
     border-radius: 25px;
@@ -66,7 +74,7 @@
 
 .project-description {
     line-height: 2rem;
-    font-size: 18px;
+    font-size: 19px;
     color: var(--text-secondary)
 }
 
@@ -116,7 +124,6 @@ a {
 @media (max-width: 1030px) {
 
     .title, .subtitle {
-        width: 100%;
         display: flex;
         justify-content: flex-start;
         margin-bottom: 1.5rem;
@@ -125,7 +132,7 @@ a {
     .project {
         display: flex;
         flex-direction: column;
-        height: 53em;
+        height: 42em;
         max-width: 600px;
         gap: 0;
         padding: .2rem;
@@ -139,7 +146,7 @@ a {
         justify-content: center;
     }
 
-    .project-display img {
+    .project-link_image img {
         width: 95%;
         height: 95%;
         border-radius: 25px;
@@ -159,7 +166,7 @@ a {
     }
 
     .project-display {
-        margin-top: 1rem;
+        margin-top: .7rem;
     }
 
     .project-information {

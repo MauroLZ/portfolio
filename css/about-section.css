@@ -12,7 +12,7 @@
     height: 350px;
     width: 400px;
     background-size: cover;
-    background-position: center;
+    background-position: center left;
     background-repeat: no-repeat;
     position: relative;
 }
@@ -52,7 +52,7 @@
 /* Media query for smaller screens */
 @media (max-width: 1030px) {
     .about-section {
-        gap: .1rem;
+        gap: 1.5rem;
         flex-direction: column; /* Switch to column layout */
         align-items: center; /* Center items horizontally */
         text-align: center; /* Center text within each section */
@@ -69,6 +69,7 @@
     .right-section {
         gap: 1rem;
         height: 350px;
+        margin-bottom: 2rem;
         width: 525px;
         display: flex;
         flex-direction: column;
@@ -89,7 +90,7 @@
     }
 
     .right-section {
-        margin: 3.5rem 0;
+        margin: 3.5rem 0 5rem 0;
         max-width: 85vw;
     }
 
@@ -104,7 +105,7 @@
     }
 
     .right-section {
-        margin: 4rem 0;
+        margin: 5rem 0 7rem 0;
         max-width: 85vw;
     }
 
@@ -121,10 +122,40 @@
 
     .right-section {
         max-width: 250px;
-        margin: 7rem 0;
+        margin: 4rem 0 7rem 0;
     }
 
     .right-section > .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .about-section {
+        height: auto;
+    }
+
+    .left-section {
+        height: auto;
+    }
+
+    .right-section {
+        width: 90vw;
+        margin: 4rem 0 7rem 0;
+    }
+
+
+
+    .section-description > p {
+        font-size: 16px;
+    }
+
+    .section-subtitle {
+        font-size: 25px;
+    }
+
+    .right-section > .section-title {
+        line-height: 1rem;
         font-size: 1.5rem;
     }
 }
